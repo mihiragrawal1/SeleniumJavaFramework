@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-31T15:28:12 IST" name="Suite" finished-at="2024-01-31T15:28:37 IST" duration-ms="25455">
+    <groups>
+      <group name="login">
+        <method signature="loginTest.valid_login(java.util.HashMap)[pri:0, instance:pract.test.loginTest@7164ca4c]" name="valid_login" class="pract.test.loginTest"/>
+        <method signature="loginTest.validate_InvalidLogin(java.util.HashMap)[pri:0, instance:pract.test.loginTest@7164ca4c]" name="validate_InvalidLogin" class="pract.test.loginTest"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2024-01-31T15:28:12 IST" name="Test" finished-at="2024-01-31T15:28:37 IST" duration-ms="25455">
+      <class name="pract.test.loginTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pract.test.loginTest@7164ca4c]" started-at="2024-01-31T15:28:12 IST" name="launchApplication" finished-at="2024-01-31T15:28:22 IST" duration-ms="9674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="valid_login(java.util.HashMap)[pri:0, instance:pract.test.loginTest@7164ca4c]" started-at="2024-01-31T15:28:22 IST" name="valid_login" data-provider="getValidData" finished-at="2024-01-31T15:28:27 IST" duration-ms="4933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Mihir@123, email=mihir@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_login -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pract.test.loginTest@7164ca4c]" started-at="2024-01-31T15:28:27 IST" name="closeBrowser" finished-at="2024-01-31T15:28:27 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:pract.test.loginTest@7164ca4c]" started-at="2024-01-31T15:28:27 IST" name="launchApplication" finished-at="2024-01-31T15:28:35 IST" duration-ms="8080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="validate_InvalidLogin(java.util.HashMap)[pri:0, instance:pract.test.loginTest@7164ca4c]" started-at="2024-01-31T15:28:35 IST" name="validate_InvalidLogin" data-provider="getInvalidData" finished-at="2024-01-31T15:28:37 IST" duration-ms="2176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Mihir23@123, email=mihiragrawal@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_InvalidLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pract.test.loginTest@7164ca4c]" started-at="2024-01-31T15:28:37 IST" name="closeBrowser" finished-at="2024-01-31T15:28:37 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- pract.test.loginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
