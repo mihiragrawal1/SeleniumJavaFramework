@@ -18,7 +18,7 @@ import pract.pageObject.Headerpage;
 
 public class loginTest extends BaseTest {
 
-	@Test(dataProvider = "getValidData",groups="login")
+	@Test(dataProvider = "getValidData",groups="login",description="Validate user login with valid crdentials")
 	public void valid_login(HashMap<String, String> input) throws InterruptedException {
 		loginobj.userLogin(input.get("email"), input.get("pass"));
 		Headerpage headerObj = new Headerpage(driver);
@@ -30,7 +30,7 @@ public class loginTest extends BaseTest {
 	}
 
 	
-	@Test(dataProvider = "getInvalidData",groups="login")
+	@Test(dataProvider = "getInvalidData",groups="login",description="Validate user login with invalid crdentials")
 	public void validate_InvalidLogin(HashMap<String, String> input) {
 		loginobj.userLogin(input.get("email"), input.get("pass"));
 

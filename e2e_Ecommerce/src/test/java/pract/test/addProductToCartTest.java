@@ -27,7 +27,7 @@ public class addProductToCartTest extends BaseTest  {
 	String Country = "India";
 	
 	
-	@Test(dataProvider="getData")
+	@Test(dataProvider="getData",description="validate e2e item/product purchase flow")
 	public void addToCartTest(HashMap<String,String> input) throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
